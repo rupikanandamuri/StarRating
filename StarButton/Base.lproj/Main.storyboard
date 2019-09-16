@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,104 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StarButton" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLQ-42-lUc">
+                                <rect key="frame" x="0.0" y="303.5" width="375" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbX-sv-Dh5">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="60"/>
+                                        <state key="normal" title="Button" image="unfilledstar"/>
+                                        <connections>
+                                            <action selector="buttonClickedWithBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZhY-t7-iNK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZz-Ze-M4o">
+                                        <rect key="frame" x="75" y="0.0" width="75" height="60"/>
+                                        <state key="normal" title="Button" image="unfilledstar"/>
+                                        <connections>
+                                            <action selector="buttonClickedWithBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fAl-74-DVn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ge-Ov-la5">
+                                        <rect key="frame" x="150" y="0.0" width="75" height="60"/>
+                                        <state key="normal" title="Button" image="unfilledstar"/>
+                                        <connections>
+                                            <action selector="buttonClickedWithBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dtb-Zw-SdF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNr-n6-aiY">
+                                        <rect key="frame" x="225" y="0.0" width="75" height="60"/>
+                                        <state key="normal" title="Button" image="unfilledstar"/>
+                                        <connections>
+                                            <action selector="buttonClickedWithBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wnk-WQ-fRa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJ5-iC-c87">
+                                        <rect key="frame" x="300" y="0.0" width="75" height="60"/>
+                                        <state key="normal" title="Button" image="unfilledstar"/>
+                                        <connections>
+                                            <action selector="buttonClickedWithBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jgw-xY-s5y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tJ5-iC-c87" firstAttribute="height" secondItem="dbX-sv-Dh5" secondAttribute="height" id="3u7-L8-826"/>
+                                    <constraint firstItem="3ge-Ov-la5" firstAttribute="height" secondItem="dbX-sv-Dh5" secondAttribute="height" id="FdA-Ob-oDG"/>
+                                    <constraint firstAttribute="height" constant="60" id="MQZ-dg-24U"/>
+                                    <constraint firstItem="WZz-Ze-M4o" firstAttribute="width" secondItem="dbX-sv-Dh5" secondAttribute="width" id="RnC-Nc-o6v"/>
+                                    <constraint firstItem="WZz-Ze-M4o" firstAttribute="height" secondItem="dbX-sv-Dh5" secondAttribute="height" id="TBt-1b-ulQ"/>
+                                    <constraint firstItem="tJ5-iC-c87" firstAttribute="width" secondItem="dbX-sv-Dh5" secondAttribute="width" id="bQY-gu-FRf"/>
+                                    <constraint firstItem="3ge-Ov-la5" firstAttribute="width" secondItem="dbX-sv-Dh5" secondAttribute="width" id="eIk-Xe-0hW"/>
+                                    <constraint firstItem="WNr-n6-aiY" firstAttribute="width" secondItem="dbX-sv-Dh5" secondAttribute="width" id="pIW-K2-pVb"/>
+                                    <constraint firstItem="WNr-n6-aiY" firstAttribute="height" secondItem="dbX-sv-Dh5" secondAttribute="height" id="zHQ-o1-TGu"/>
+                                </constraints>
+                            </stackView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="Fcz-on-psY">
+                                <rect key="frame" x="26" y="436" width="335" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="9rb-xK-bcH"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lrt-C0-Tda">
+                                <rect key="frame" x="166.5" y="501.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fcz-on-psY" secondAttribute="bottom" constant="201" id="7Cv-dg-whQ"/>
+                            <constraint firstItem="Fcz-on-psY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="EBN-LE-D1X"/>
+                            <constraint firstItem="GLQ-42-lUc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FXb-5X-ZK6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lrt-C0-Tda" secondAttribute="bottom" constant="145" id="IaL-kE-Qoc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fcz-on-psY" secondAttribute="trailing" constant="16" id="cQc-Dr-z2U"/>
+                            <constraint firstItem="GLQ-42-lUc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gay-6Z-CZO"/>
+                            <constraint firstItem="Lrt-C0-Tda" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nIl-v6-ayk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GLQ-42-lUc" secondAttribute="trailing" id="r1a-aH-GbN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="Lrt-C0-Tda" id="8J8-RP-l5i"/>
+                        <outlet property="slider" destination="Fcz-on-psY" id="gza-Ty-xUI"/>
+                        <outlet property="starFifthButton" destination="tJ5-iC-c87" id="yE7-fy-8TQ"/>
+                        <outlet property="starFirstButton" destination="dbX-sv-Dh5" id="16y-Ov-fuz"/>
+                        <outlet property="starFourthButton" destination="WNr-n6-aiY" id="XLz-Tg-tbT"/>
+                        <outlet property="starSecondButton" destination="WZz-Ze-M4o" id="xmF-Y0-4hP"/>
+                        <outlet property="starThirdButton" destination="3ge-Ov-la5" id="2jA-9V-dty"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="unfilledstar" width="156.52174377441406" height="156.52174377441406"/>
+    </resources>
 </document>
